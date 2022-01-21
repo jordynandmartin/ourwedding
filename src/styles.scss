@@ -1,0 +1,41 @@
+$spacer: 1rem;
+$blush-pink: rgb(228, 192, 192);
+
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 10)
+);
+
+$btn-border-radius:  0rem;
+$btn-border-radius-sm:  0rem;
+$btn-border-radius-lg: 0rem;
+$btn-padding-x: $spacer * 5;
+$btn-padding-y: $spacer * 0.75;
+$btn-border-width:  0.1rem;
+
+
+$navbar-toggler-border-radius: 0;
+$navbar-toggler-focus-width: 0;
+
+$table-th-font-weight: normal;
+
+$link-hover-color: $blush-pink;
+$navbar-light-hover-color: $blush-pink;
+$navbar-light-active-color: $blush-pink;
+$btn-primary-hover-color: $blush-pink;
+
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: 'John Davidson Regular';
+  src: url('/assets/john_davidson/John Davidson Demo.ttf');
+}
+
+.fancy-text{
+  font-family: 'John Davidson Regular';
+}
