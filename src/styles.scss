@@ -24,9 +24,34 @@ $navbar-toggler-focus-width: 0;
 $table-th-font-weight: normal;
 
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+@font-face{
+  font-family: 'Lovelace';
+  src: url('./assets/lovelace.otf');
+}
+
+@font-face{
+  font-family: 'Themysion';
+  src: url('./assets/Themysion.ttf');
+}
+
+@font-face{
+  font-family: 'Garet';
+  src: url('./assets/Garet-Book.otf');
+}
 
 .fancy-text{
-  font-family: 'Pinyon Script', cursive;
-  font-weight: lighter;
+  font-family: 'Lovelace';
+  font-weight: 100;
+  letter-spacing: 2rem;
 }
+
+.accent-text{
+  font-family: 'Themysion'
+}
+
+.sub-text{
+  font-family: 'Garet';
+  font-weight: bold;
+}
+
