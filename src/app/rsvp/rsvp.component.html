@@ -3,32 +3,33 @@
 		<app-navigation></app-navigation>
 	</div>
 </div>
-<div class="container-fluid pt-6">
-	<div class="row">
-		<div class="display-4 text-center accent-text">We Hope to See You There</div>
+<div class="container-fluid pt-6 bg-transparent">
+	<div class="row pb-3">
+		<div class="text-center fancy-text display-5">RSVP</div>
+		<div class="text-center fancy-text">JUNE 10, 2023</div>
 	</div>
 	<div class="row align-items-center justify-content-center">
-		<div class="col-lg-6 col-md-6 col-8 py-4">
+		<div class="col-lg-6 col-md-6 col-8">
 				<form [formGroup]= "rsvpForm" (ngSubmit)="submit()">
 					<div class="form-group py-2">
-						<label class="pb-2" for="attendeesList">List the names of all attendees</label>
+						<label class="pb-2 sub-text" for="attendeesList">List the names of all attendees</label>
 						<textarea formControlName="guestNames" class="form-control" id="attendeesList" rows="3"></textarea>
 						<span class="text-danger" *ngIf="guestNames.invalid && (guestNames.dirty || guestNames.touched)">You must provide a list of names</span>
 					</div>
 					<div class="form-group pb-4 pt-2">
-						<label class="pb-2" for="attendeeNumber">Number of attendees</label>
+						<label class="pb-2 sub-text" for="attendeeNumber">Number of attendees</label>
 						<input formControlName="guestNumber" class="form-control" id="attendeeNumber"/>
 						<span class="text-danger" *ngIf="guestNumber.invalid && (guestNumber.dirty || guestNumber.touched)">You must provide a whole number</span>
 					</div>
-					<button type="submit" class="sub-text btn btn-outline-dark w-100">RSVP</button>
+					<button type="submit" class="sub-text btn btn-outline-dark w-100">SEND</button>
 				</form>	
 		</div>
 	</div>
 	<div *ngIf="rsvpSubmitted" class="row text-center">
-		<div class="fancy-sub-text">Thank you.Your RSVP has been submitted.</div>
+		<div class="sub-text">Thank you.Your RSVP has been submitted.</div>
 	</div>
 	<div *ngIf="errorOccured" class="row text-center">
-		<div class="fancy-sub-text text-danger">An unexpected error has occured. Please try again later.</div>
+		<div class="sub-text text-danger">An unexpected error has occured. Please try again later.</div>
 	</div>
 </div>
 

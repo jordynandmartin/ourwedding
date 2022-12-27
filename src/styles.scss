@@ -40,18 +40,26 @@ $table-th-font-weight: normal;
   src: url('./assets/Garet-Book.otf');
 }
 
-.fancy-text{
+.title-text{
   font-family: 'Lovelace';
   font-weight: 100;
   letter-spacing: 2rem;
 }
 
+.fancy-text{
+  font-family: 'Lovelace';
+  font-weight: 100;
+  letter-spacing: 2px;
+} 
+
 .accent-text{
-  font-family: 'Themysion'
+  font-family: 'Themysion';
 }
 
 .sub-text{
   font-family: 'Garet';
   font-weight: bold;
+  letter-spacing:2px;
 }
 
+.navbar-toggler  {  border: none;  }

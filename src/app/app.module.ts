@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
-import { RegistryComponent } from './registry/registry.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from  '@angular/common/http';
 import { AdminComponent } from './admin/admin.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -18,7 +17,6 @@ import { LoadingInterceptor } from './loadinginterceptor';
     AppComponent,
     HomeComponent,
     RsvpComponent,
-    RegistryComponent,
     AdminComponent,
     NavigationComponent,
     LoadingComponent
