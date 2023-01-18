@@ -12,6 +12,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { LoadingComponent } from './loading/loading.component';
 import { LoadingInterceptor } from './loadinginterceptor';
 import { GalleryComponent } from './gallery/gallery.component';
+import { RegistryComponent } from './registry/registry.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     AdminComponent,
     NavigationComponent,
     LoadingComponent,
-    GalleryComponent
+    GalleryComponent,
+    RegistryComponent
   ],
   imports: [
     BrowserModule,
