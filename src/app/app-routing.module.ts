@@ -5,6 +5,7 @@ import { RsvpComponent } from './rsvp/rsvp.component';
 import { AdminComponent } from './admin/admin.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { RegistryComponent } from './registry/registry.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -12,7 +13,8 @@ const routes: Routes = [
 {path: 'rsvp', component: RsvpComponent},
 {path: 'photos', component: GalleryComponent},
 {path: 'admin', component: AdminComponent},
-{path: 'registry', component: RegistryComponent}
+{path: 'registry', component: RegistryComponent},
+{path: 'schedule', component: ScheduleComponent}
 ];
 
 @NgModule({
