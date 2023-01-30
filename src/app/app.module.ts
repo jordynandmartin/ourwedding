@@ -14,6 +14,7 @@ import { LoadingInterceptor } from './loadinginterceptor';
 import { GalleryComponent } from './gallery/gallery.component';
 import { RegistryComponent } from './registry/registry.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { HotelsComponent } from './hotels/hotels.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
     LoadingComponent,
     GalleryComponent,
     RegistryComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    HotelsComponent
   ],
   imports: [
     BrowserModule,
