@@ -7,7 +7,8 @@ $spacers: (
   3: $spacer,
   4: ($spacer * 1.5),
   5: ($spacer * 3),
-  6: ($spacer * 6)
+  6: ($spacer * 6),
+  7: ($spacer * 20)
 );
 
 $btn-border-radius:  0rem;
@@ -65,6 +66,10 @@ $table-th-font-weight: normal;
 .paragraph-text{
   font-family: 'Garet';
   font-weight: light;
+  text-indent: 30px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar-toggler  {  border: none;  }
