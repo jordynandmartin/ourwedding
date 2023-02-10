@@ -45,9 +45,11 @@ export class RsvpComponent implements OnInit {
 
         this.guestService.addGuests(this.party).subscribe(
           (response : any) => {
+            this.errorOccured = false;
             this.rsvpSubmitted = true;
           },
           (error) => {
+            this.rsvpSubmitted = false;
             this.errorOccured = true;
             console.log(error);
           }
